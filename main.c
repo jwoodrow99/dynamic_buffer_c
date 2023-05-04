@@ -3,20 +3,19 @@
 
 int main(void){
 	
-	printf("Dynamic Buffer!\n");
-	
 	char input;
 	int count = 1;
 	char *buffer = malloc(sizeof(char) * count);
 	
-	printf("Starting size of buffer: %lu\n", (sizeof(char) * (count + 1)));
+	printf("Dynamic Buffer!\n");
+	printf("Enter one character at a time, 0 to quit.\n");
 	printf("==============================================\n");
 	
 	while(1) {
 		printf("Enter a charcter: ");
 		scanf(" %c", &input);		
 		
-		if(input == 'q'){
+		if(input == '0'){
 			break;
 		}
 
